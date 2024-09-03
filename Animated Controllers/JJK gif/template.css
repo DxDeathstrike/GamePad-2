@@ -1,37 +1,34 @@
+
 /* Begin PS5 Controller Styling */
 
+
 .controller.ds5 {
-    background: url(https://i.imgur.com/pNfRffY.gif) no-repeat center center;
-    background-size: fill;
-    height: 372px;
-    width: 640px;
-    position: relative; /* Ensure child elements are positioned relative to this container */
-    overflow: hidden; /* Hide overflow if necessary */
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/base.gif) no-repeat center center;
+    background-size: cover; /* Scale the GIF to cover the entire area */
+    height: 700px;
+    width: 1200px;
 }
+
+
 
 .ds5.disconnected div {
     display: none;
 }
 
-/* Apply scale transformation to scale down images within the controller */
-.ds5 .scaled {
-    transform: scale(0.5333, 0.5372);
-    transform-origin: top left;
-    position: absolute;
-}
-
 .ds5 .triggers {
     width: 598px;
     height: 90px;
-    left: 159px;
-    top: 19px;
+    position: absolute;
+    left: 299px;
+    top: 38px;
 }
 
 .ds5 .trigger {
     width: 99px;
     height: 100%;
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Trigger_Pressed.png);
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Trigger_Pressed.png);
     opacity: 0;
+    /* transform: scale(1.05); */
 }
 
 .ds5 .trigger.left {
@@ -46,22 +43,27 @@
 .ds5 .bumper {
     width: 200px;
     height: 45px;
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Bumper.png) no-repeat;
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Bumper.png) no-repeat;
     opacity: 0;
+    
 }
 
 .ds5 .bumpers {
+    position: absolute;
     width: 672px;
     height: 23px;
-    left: 157px;
-    top: 70px;
+    left: 293px;
+    top: 132px;
 }
 
 .ds5 .bumper.pressed {
     opacity: 0.8;
+    
 }
 
 .ds5 .bumper.left {
+    /* -webkit-transform: rotateY(180deg); */
+    /* transform: rotateY(180deg); */
     float: left;
 }
 
@@ -73,22 +75,45 @@
 .ds5 .touchpad {
     width: 350px;
     height: 300px;
-    left: 225px;
-    top: 40px;
+    position: absolute;
+    left: 422px;
+    top: 77px;
 }
 
 .ds5 .touchpad.pressed {
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Touchpad.png) no-repeat center;
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Touchpad.png) no-repeat center;
 }
 
 .ds5 .meta {
     width: 100px;
     height: 100px;
-    left: 291px;
-    bottom: 92px;
+    position: absolute;
+    left: 549px;
+    bottom: 261px;
 }
 
-.ds5 .arrows {
+.ds5 .meta.pressed {
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Home.png) no-repeat center;
+}
+
+.ds5 .p0 {
+    background-position: 0 -6px;
+}
+
+.ds5 .p1 {
+    background-position: 0 -28px;
+}
+
+.ds5 .p2 {
+    background-position: 0 -49px;
+}
+
+.ds5 .p3 {
+    background-position: 0 -70px;
+}
+
+*/ .ds5 .arrows {
+    position: absolute;
     width: 352px;
     height: 46px;
     top: 142px;
@@ -97,49 +122,73 @@
 
 .ds5 .back,
 .ds5 .start {
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Select.png);
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Select.png);
     width: 26px;
     height: 43px;
     opacity: 0;
 }
 
 .ds5 .start {
+    position: absolute;
     left: 546px;
     bottom: -30px;
 }
 
 .ds5 .back {
+    position: absolute;
     left: 170px;
     bottom: -30px;
 }
 
+
+.ds5 .back.pressed,
+.ds5 .start.pressed {
+    /* background-position-y: -21px; */
+    /* margin-top: 2px; */
+    opacity: 1;
+}
+
+.ds5 .back {
+    float: left;
+    /* width: 28px; */
+}
+
+.ds5 .start {
+    float: right;
+    /* width: 28px; */
+    background-position: 0px 0;
+}
+
 .ds5 .abxy {
+    position: absolute;
     width: 170px;
     height: 171px;
-    top: 80px;
-    left: 406px;
+    top: 200px;
+    left: 762px;
 }
 
 .ds5 .button {
+    position: absolute;
     width: 55px;
     height: 55px;
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/FaceButtons.png);
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/FaceButtons.png);
 }
 
 .ds5 .button.pressed {
     background-position-y: 55px;
+    /* margin-top: 5px; */
 }
 
 .ds5 .a {
     background-position: 0 0;
-    bottom: 28px;
-    left: 31px;
+    bottom: 0px;
+    left: 58px;
 }
 
 .ds5 .b {
     background-position: -57px 0;
     top: 57px;
-    right: 52px;
+    right: -3px;
 }
 
 .ds5 .x {
@@ -149,19 +198,21 @@
 
 .ds5 .y {
     background-position: 55px 0;
-    left: 31px;
-    bottom: 90px;
+    left: 58px;
+    bottom: 117px;
 }
 
 .ds5 .sticks {
+    position: absolute;
     width: 364px;
     height: 105px;
-    top: 185px;
-    left: 225px;
+    top: 348px;
+    left: 422px;
 }
 
 .ds5 .stick {
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Sticks.png);
+    position: absolute;
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Sticks.png);
     height: 94px;
     width: 94px;
 }
@@ -185,14 +236,16 @@
 }
 
 .ds5 .dpad {
+    position: absolute;
     width: 125px;
     height: 126px;
-    top: 115px;
-    left: 130px;
+    top: 220px;
+    left: 286px;
 }
 
 .ds5 .face {
-    background: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Dpad.png);
+    background: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Dpad.png);
+    position: absolute;
 }
 
 .ds5 .face.up,
@@ -209,29 +262,30 @@
 
 .ds5 .face.up {
     left: 44px;
-    top: 0px;
+    top: 0;
     background-position: -37px 0px;
 }
 
 .ds5 .face.down {
     left: 44px;
-    bottom: 30px;
+    bottom: 0;
     background-position: 0px 0;
 }
 
 .ds5 .face.left {
-    top: 27px;
-    left: 20px;
+    top: 45px;
+    left: 0;
     background-position: 104px 0;
 }
 
 .ds5 .face.right {
-    top: 27px;
-    right: 10px;
+    top: 45px;
+    right: 0px;
     background-position: 52px 0;
 }
 
 .ds5 .face.pressed {
+    /* margin-top: 5px; */
     background-position-y: 52px;
 }
 
@@ -239,35 +293,27 @@
     margin-top: -300px;
 }
 
+
 .ds5.white .back,
 .ds5 .start {
-    background-image: url(https://dxdeathstrike.github.io/GamePadViewer/Free%20Controllers/gif/Start.png);
+    background-image: url(https://dxdeathstrike.github.io/GamePad-2/Animated%20Controllers/JJK%20gif/Start.png);
     width: 26px;
     height: 43px;
+
 }
 
 .ds5 .start {
+    position: absolute;
     top: 175px;
     left: 772px;
+
 }
 
 .ds5 .back {
+    position: absolute;
     top: 175px;
     left: 396px;
 }
 
-/* Apply the scaled class to all relevant elements */
-.ds5 .triggers,
-.ds5 .bumpers,
-.ds5 .touchpad,
-.ds5 .meta,
-.ds5 .arrows,
-.ds5 .button,
-.ds5 .sticks,
-.ds5 .stick,
-.ds5 .face {
-    transform: scale(0.5333, 0.5372);
-    transform-origin: top left;
-}
 
-/* END PS5 Controller Styling */
+/*END PS5 Controller Styling*/
